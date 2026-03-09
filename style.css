@@ -268,7 +268,7 @@ button{
 {
   body * { display: none; }
   body::before {
-    content: "VIEW IN DESKTOP MODE...";
+    content: "VIEW IN DESKTOP MODE AT 100% ZOOM...";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,3 +278,4 @@ button{
     font-family: sans-serif;
   }
 }
+
