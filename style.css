@@ -1,0 +1,280 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{
+    text-align: center;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height:95px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#strip1{
+  height: 45px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+#strip2{
+  height: 50px;
+  background-color: rgb(245, 245, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width:500px)
+{
+  nav{
+    height:400px;
+  }
+}
+/* #logo{
+    margin-left: 20%;
+} */
+/* #bag{
+    margin-right: 20%;
+} */
+#page{
+    background-color: rgb(255, 255, 255) ;
+    /* height: 100vw; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: -30px;
+}
+#store2{
+    width: 100%;
+    height: 40%;
+    font-size: larger;
+    padding: 0vw 8vw;
+    display: flex;
+    justify-content: center;
+}
+#st{
+    font-size: 95px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+main .bot{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.bot p{
+    padding: 40px 370px;
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(110, 110, 115);
+
+}
+#hero{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+#heroo{
+    display: flex;
+}
+h1{
+    text-align: center;
+}
+#block1{
+    padding-top:10px;
+    width: 300px;
+}
+#block2 img{
+    padding-left: 40px;
+}
+#block3{
+    padding-top:10px;
+    width: 300px;
+}
+h1{
+    font-weight: 550;
+    font-size: 40px;
+}
+#links1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#links2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+button{
+    border: 5px;
+    background-color: rgb(0, 113, 227);
+    border-radius: 100px;
+    color: white;
+}
+
+/* //footer begins */
+
+#bottom{
+    margin-top: 160px;
+    width: 100%;
+    background-color: rgb(245, 245, 247);
+    height: 800px;
+
+}
+
+
+#one{
+    display: flex;
+    justify-content: center;
+}
+
+.ft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin-top: 70px;
+}
+.ft p{
+    width: 70%;
+}
+/* using directchild */
+.ft > i{    
+    font-size:50px;
+}
+
+.apple-footer {
+  background: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #6e6e73;
+  font-size: 12px;
+  padding: 30px 0;
+}
+
+.footer-wrapper {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.footer-top p {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.footer-divider {
+  height: 1px;
+  background: #d2d2d7;
+  margin: 20px 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.column h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.column a {
+  display: block;
+  color: #6e6e73;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  font-size: 12px;
+}
+
+.shop-text {
+  margin-bottom: 15px;
+}
+
+.shop-text a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.shop-text a:hover {
+  text-decoration: underline;
+}
+
+.legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.legal-links a {
+  margin: 0 10px;
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+.country {
+  margin-left: auto;
+}
+@media (max-width: 900px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .country {
+    margin-left: 0;
+  }
+}
+@media (max-width:1024px)
+{
+  body * { display: none; }
+  body::before {
+    content: "VIEW IN DESKTOP MODE...";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+}
